@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    outline: transparent;
+}
+
+img {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden; // с этим fancybox работает неправильно. странаца скролит наверх
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    line-height: 20px;
+    color: $text;
+}
+
+//прижать footer к низу 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+//   footer 
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    // margin: 0 auto;
+    padding: 0 0 0 33px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+
+    appearance: none;
+}
+
+.input {
+    display: block;
+    padding: 0px 15px;
+
+    // &.focus {}
+
+    &.err {
+        border: 1px solid red;
+    }
+}
+
+textarea {
+    padding: 10px 15px;
+}
+
+.title {
+    font-family: "Rubik-Bold";
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 auto;
+    color: $text;
+}
+
+._ibg {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}

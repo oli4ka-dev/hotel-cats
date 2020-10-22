@@ -1,0 +1,677 @@
+@media(max-width: 1400px) {
+    .review {
+        &__inner {
+            margin-right: -33%;
+            margin-left: 30px;
+        }
+
+        .review__item {
+            margin-right: -33%;
+            margin-left: 30px;
+        }
+    }
+}
+
+@media(max-width: 1366px) {
+
+
+    .review {
+        // &__inner {
+        //     margin-right: -10%;
+        //     margin-left: 0;
+        // }
+
+        // .review__item {
+        //     margin-right: -10%;
+        // }
+
+        button.slick-btn {
+            // right: 24%;
+            // bottom: -15px;
+        }
+
+        .slick-btn.slick-prev {
+            // margin-left: auto;
+            // margin-right: 70px;
+            // top: 22px;
+        }
+
+        .slick-btn.slick-next {
+            // margin-left: auto;
+            // margin-right: 22px;
+            // margin-top: 38px;
+        }
+
+    }
+}
+
+@media(max-width: 1300px) {
+    .rooms {
+        &__wrap {
+            margin-right: 0px;
+        }
+
+        &__inner {
+            margin: 0 auto;
+            position: relative;
+            margin-left: 0px;
+            flex-basis: calc(0px);
+            flex-basis: flex-end;
+            max-width: 100%;
+        }
+
+        &__description-item {
+            // top: -350px;
+        }
+
+        // .slick-dots {
+        //     margin-left: 0px;
+        //     margin-top: 0px;
+        // }
+    }
+}
+
+
+@media(max-width: 1270px) {
+    .rooms {
+        button.slick-btn {
+            bottom: 5px;
+        }
+    }
+}
+
+@media(max-width: 1210px) {
+    .advantage {
+        &__item {
+            max-width: 340px;
+        }
+
+        .item__title {
+            font-size: 20px;
+            line-height: 140%;
+            margin-bottom: 8px;
+        }
+
+        .item__text {
+            font-size: 15px;
+            line-height: 140%;
+        }
+    }
+}
+
+@media(max-width: 1175px) {
+    .advantage {
+        &__item {
+            max-width: 324px;
+            padding: 25px;
+        }
+    }
+
+}
+
+@media(max-width: 1070px) {
+    .advantage {
+        &__inner {
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .review__item {
+        &-text {
+            font-size: 15px;
+            line-height: 140%;
+        }
+    }
+
+    .contacts {
+        &__content {
+            background-color: #FAC663;
+            padding: 40px 5px 40px 40px;
+            width: 43%;
+        }
+
+        &__content-title {
+            font-size: 30px;
+            line-height: 33px;
+
+        }
+
+        &__content-inner {
+            max-width: 260px;
+        }
+
+        &__map {
+            width: 57%;
+        }
+
+        .content-info {
+            margin-bottom: 23px;
+
+            &-text,
+            &-title {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width: 993px) {
+    .review {
+        background-image: url(../images/paw-2-tablet.svg);
+
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+            margin-top: -60px;
+            padding-top: 85px;
+            padding-bottom: 45px;
+        }
+    }
+
+    .advantage {
+        background-image: url(../images/advant-paw-2.svg);
+
+        .item__img {
+            width: 75px;
+            height: 75px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .rooms {
+        &__wrap-bg {
+            background-image: url(../images/fish-tablet.svg);
+        }
+
+        &__title {
+            margin-bottom: 60px;
+        }
+
+        &__img-item {
+            max-width: 442px;
+            width: 100%;
+            min-height: 326px;
+            border-radius: 10px;
+        }
+
+        &__description-item {
+            top: -370px;
+            right: 13%;
+            max-width: 345px;
+            min-height: 266px;
+            padding: 40px 30px 40px 40px;
+
+            li {
+                padding-left: 19px;
+                position: relative;
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+            li::before {
+                width: 11px;
+                height: 11px;
+            }
+        }
+
+        .description-item-title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width: 870px) {
+    .review {
+        .review__item {
+            max-width: 442px;
+            min-height: 201px;
+        }
+    }
+
+    .rooms {
+        &__img-item {
+            margin-left: 30px;
+        }
+
+        &__description-item {
+            right: 30px;
+        }
+    }
+}
+
+@media(max-width: 769px) {
+    .review {
+        &__inner {
+            margin-right: 0%;
+            margin-left: 0px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .review__item {
+            margin-right: 0%;
+            margin-left: 0px;
+        }
+
+        .slick-dots {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .reserve {
+        &__wrapper {
+            margin-bottom: 170px;
+        }
+
+        &__img {
+            // min-height: 868px;
+            min-height: 100vh;
+        }
+
+        &__content {
+            text-align: center;
+            padding: 140px 10px 10px 10px;
+        }
+    }
+
+    .advantage {
+        background-image: url(../images/advant-paw-3.svg);
+        padding-top: -70px;
+        margin-top: 0px;
+
+        &__inner {
+            margin-right: -30px;
+        }
+
+        &__item {
+            margin: 0 30px 20px 0;
+            flex-basis: calc(50% - 30px);
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            margin-top: -100px;
+            padding-top: -80px;
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 40px;
+        }
+
+        .item__img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .rooms {
+        &__img-item {
+            margin-left: 30px;
+        }
+
+        &__description-item {
+            top: -300px;
+            right: 30px;
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width: 760px) {
+    .rooms {
+        &__wrap-bg {
+            background-image: url(../images/fish-mobile.svg);
+        }
+
+        &__inner {
+            display: block;
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 40px;
+        }
+
+        &__img-item {
+            max-width: 290px;
+            // width: 100%;
+            min-height: 192px;
+            border-radius: 8px 8px 0px 0px;
+            margin-left: 0;
+        }
+
+        &__description-item {
+            top: -5px;
+            left: 0;
+            right: 0;
+            max-width: 290px;
+            min-height: 252px;
+            padding: 25px;
+            border-radius: 0px 0px 8px 8px;
+            position: relative;
+            z-index: 1;
+            margin: 0 auto;
+        }
+    }
+
+    .advantage {
+        &__title {
+            padding-top: 20px;
+        }
+    }
+
+    .review {
+        background-image: url(../images/paw-2-mobile.svg);
+
+        &__title {
+            margin-top: 0px;
+            padding-top: 0px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .reserve {
+        &__wrapper {
+            margin-bottom: 270px;
+        }
+
+        &__content {
+            padding: 50px 0px 10px 0px;
+        }
+
+        &__title-city {
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 44px;
+            line-height: 52px;
+        }
+    }
+
+    .contacts {
+        &__wrap {
+            flex-direction: column;
+        }
+
+        .content-info {
+            margin-bottom: 19px;
+
+            &-title {
+                margin-bottom: 8px;
+            }
+        }
+
+        &__content {
+            padding: 40px 15px 20px 15px;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        &__content-inner {
+            max-width: 100%;
+        }
+
+        .contacts__map {
+            height: 300px;
+            width: 100%;
+        }
+    }
+
+    .footer {
+        &__top {
+            padding: 30px 0px 30px 0px;
+        }
+
+        &__bottom {
+            padding: 15px 0 30px 0px;
+        }
+
+        &__inner {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width: 715px) {
+    .review {
+        .container-fluid {
+            padding: 0 0px;
+        }
+
+        &__inner {
+            // margin-left: 15px;
+        }
+
+        .review__item {
+            padding: 25px;
+        }
+
+        &__item-text {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .review__item-author {
+            padding-left: 0;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .advantage {
+        &__inner {
+            display: block;
+            margin-right: 0;
+        }
+
+        &__item {
+            max-width: 290px;
+            min-height: 248px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            padding: 18px 8px 18px 18px;
+        }
+    }
+
+    .header {
+        position: relative;
+
+        .logo {
+            z-index: 4;
+        }
+
+        .inner {
+            min-height: 62px;
+        }
+
+        .header__btn {
+            display: block;
+            width: 31px;
+            height: 22px;
+            position: relative;
+            z-index: 5;
+
+            div {
+                background-color: $text;
+                height: 3px;
+                width: 100%;
+                border-radius: 5px;
+                z-index: 5;
+                transition: all .4s;
+
+                &+div {
+                    margin-top: 6px;
+                }
+            }
+        }
+
+        .header__btn.active .div-first {
+            transform: rotate(136deg);
+            position: absolute;
+            margin-top: 8px;
+            margin-right: -1px;
+        }
+
+        .header__btn.active .div-last {
+            transform: rotate(-136deg);
+            position: absolute;
+            margin-top: 6px;
+            margin-left: 1px;
+        }
+
+        .header__btn.active div {
+            transform: scale(0);
+        }
+
+        .header__btn-social a {
+            display: flex;
+            padding: 15px 0 10px 0;
+        }
+
+        .header__btn-social ul {
+            display: none;
+            opacity: 0;
+            overflow: visible;
+            top: auto;
+            left: 0px;
+            position: absolute;
+            padding: 0px 0 0 15px;
+            z-index: 3;
+
+            li+li {
+                margin-left: 20px;
+            }
+        }
+
+        .menu__list {
+            display: none;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: #FAC663;
+            padding: 100px 0 0 15px;
+            z-index: 3;
+
+            li+li {
+                margin-left: 0px;
+            }
+
+            // &:last-child {
+            //     margin-bottom: 40px;
+            // }
+
+            &-link {
+                font-family: "Rubik-Medium";
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .review {
+        .review__item {
+            max-width: 290px;
+            min-height: 230px;
+
+        }
+    }
+
+    .footer {
+        &__top {
+            padding: 30px 0px 10px 0px;
+        }
+
+        .menu__list {
+            flex-wrap: wrap;
+
+            li {
+                padding-bottom: 20px;
+                margin-right: 23px;
+            }
+
+            li+li {
+                margin-left: 0px;
+            }
+        }
+
+        &__bottom {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__bottom-text {
+            margin-bottom: 20px;
+        }
+
+        &__inner {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer__bottom-link {
+            padding-left: 0px;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////
+@media(min-width: 601px) {
+    .header {
+
+        .menu__list {
+            display: flex !important;
+            opacity: 1;
+        }
+    }
+}
+
+@media(min-width: 318px) {
+    .header {
+        .header__btn-social ul {
+            display: flex !important;
+            opacity: 1;
+        }
+    }
+
+}
