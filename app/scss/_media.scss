@@ -12,39 +12,6 @@
     }
 }
 
-@media(max-width: 1366px) {
-
-
-    .review {
-        // &__inner {
-        //     margin-right: -10%;
-        //     margin-left: 0;
-        // }
-
-        // .review__item {
-        //     margin-right: -10%;
-        // }
-
-        button.slick-btn {
-            // right: 24%;
-            // bottom: -15px;
-        }
-
-        .slick-btn.slick-prev {
-            // margin-left: auto;
-            // margin-right: 70px;
-            // top: 22px;
-        }
-
-        .slick-btn.slick-next {
-            // margin-left: auto;
-            // margin-right: 22px;
-            // margin-top: 38px;
-        }
-
-    }
-}
-
 @media(max-width: 1300px) {
     .rooms {
         &__wrap {
@@ -58,13 +25,7 @@
             flex-basis: calc(0px);
             flex-basis: flex-end;
             max-width: 100%;
-        }
-
-        &__description-item {
-            // top: -350px;
-        }
-
-      
+        }      
     }
 }
 
@@ -107,6 +68,9 @@
 }
 
 @media(max-width: 1070px) {
+    .banner__content {
+        margin-left: 120px;
+    }
     .advantage {
         &__inner {
             justify-content: center;
@@ -115,6 +79,9 @@
 }
 
 @media(max-width: 1024px) {
+    .banner__content {
+        margin-left: 90px;
+    }
     .review__item {
         &-text {
             font-size: 15px;
@@ -156,6 +123,9 @@
 }
 
 @media(max-width: 993px) {
+    .banner__content {
+        margin-left: 60px;
+    }
     .review {
         background-image: url(../images/paw-2-tablet.svg);
 
@@ -242,6 +212,18 @@
 }
 
 @media(max-width: 769px) {
+    .banner {
+        margin: 100px 0;
+         &__img {
+             min-height: 359px;
+         }
+     }
+     .banner__content {
+      margin-left: 50px;
+      &-inner{
+          min-height: 359px;
+      }
+     }
     .review {
         &__inner {
             margin-right: 0%;
@@ -267,7 +249,6 @@
             // min-height: 868px;
             height: 100vh;
             margin-bottom: 170px;
-           
         }
 
         &__content {
@@ -324,6 +305,7 @@
 }
 
 @media(max-width: 760px) {
+   
     .rooms {
         &__wrap-bg {
             background-image: url(../images/fish-mobile.svg);
@@ -465,10 +447,6 @@
             padding: 0 0px;
         }
 
-        &__inner {
-            // margin-left: 15px;
-        }
-
         .review__item {
             padding: 25px;
         }
@@ -485,8 +463,39 @@
 }
 
 @media(max-width: 600px) {
+     .banner {
+        margin: 60px 0;
+         &__img {
+            min-height: 496px;
+         }
+     }
+     .banner__content {
+         justify-content: center;
+         align-items: flex-start;
+      margin-left: 0px;
+      &-title-top.title{
+        font-size: 24px;
+        line-height: 28px;
+      }
+      &-title.title {
+        font-size: 37px;
+        line-height: 44px;
+     margin-bottom: 10px;
+    }
+    &-text {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+      &-inner{
+       justify-content: flex-start;
+       align-items: center;
+       padding: 50px 0 10px 0;
+       min-height: 496px;
+      }
+     }
     .advantage {
-        // margin-top: 100px;
         &__inner {
             display: block;
             margin-right: 0;
@@ -602,6 +611,9 @@
 }
 
 @media(max-width: 480px) {
+    .banner {
+        margin: 40px 0;
+    }
     .review {
         .review__item {
             max-width: 290px;
@@ -610,12 +622,8 @@
         }
     }
     .reserve {
-       
         &__wrapper {
             margin-bottom: 300px;
-        }
-        ._ibg img{
-            // margin-bottom: 150px;
         }
     }
 

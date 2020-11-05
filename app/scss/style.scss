@@ -52,9 +52,6 @@
 //end header
 //start section reserve
 .reserve {
-    // margin-bottom: 105px;
-    // padding-bottom: 115px;
-
     &__wrapper {
         position: relative;
         padding-bottom: 115px;
@@ -95,13 +92,14 @@
 
     &__btn {
         font-family: "OpenSans-SemiBold";
-        padding: 14px 74px 17px 30px;
+        padding: 14px 74px 17px 27px;
         background-color: #fffefd;
         box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
         border-radius: 25px;
         color: $text;
         font-size: 16px;
         line-height: 19px;
+        width: 206px;
         position: relative;
 
         &::after {
@@ -577,5 +575,58 @@
 }
 
 //end footer
+///////////////start page catalog
+// start section banner
+.banner {
+   margin: 140px 0;
+    &__wrapper {
+        position: relative;
+    }
 
-@import 'media';
+    &__img {
+        position: absolute;
+       width: 99.7%;
+        min-height: 379px;
+        height: auto;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+     img{
+        border-radius: 10px;
+      }
+    }
+}
+   .banner__content {
+  display: flex;
+  align-items: center;
+margin-left: 270px;
+  &-inner{
+    z-index: 1;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      min-height: 379px;
+  }
+  &-title-top.title{
+    text-align: left;
+    margin: 0;
+  }
+        &-title.title {
+            font-size: 56px;
+            line-height: 66px;
+            text-align: left;
+            margin: 0;
+        }
+        &-text {
+            max-width: 330px;
+            margin-bottom: 35px;
+        }
+    }
+
+  
+// end section banner
+///////////////end page catalog
+
+@import '_media';
