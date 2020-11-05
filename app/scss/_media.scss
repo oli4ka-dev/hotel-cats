@@ -64,10 +64,7 @@
             // top: -350px;
         }
 
-        // .slick-dots {
-        //     margin-left: 0px;
-        //     margin-top: 0px;
-        // }
+      
     }
 }
 
@@ -265,13 +262,12 @@
     }
 
     .reserve {
-        &__wrapper {
-            margin-bottom: 170px;
-        }
-
+        height: 100vh;
         &__img {
             // min-height: 868px;
-            min-height: 100vh;
+            height: 100vh;
+            margin-bottom: 170px;
+           
         }
 
         &__content {
@@ -282,7 +278,7 @@
 
     .advantage {
         background-image: url(../images/advant-paw-3.svg);
-        padding-top: -70px;
+        padding-top: 110px;
         margin-top: 0px;
 
         &__inner {
@@ -296,8 +292,6 @@
         }
 
         &__title {
-            margin-top: -100px;
-            padding-top: -80px;
             font-size: 28px;
             line-height: 33px;
             margin-bottom: 40px;
@@ -492,6 +486,7 @@
 
 @media(max-width: 600px) {
     .advantage {
+        // margin-top: 100px;
         &__inner {
             display: block;
             margin-right: 0;
@@ -612,6 +607,15 @@
             max-width: 290px;
             min-height: 230px;
 
+        }
+    }
+    .reserve {
+       
+        &__wrapper {
+            margin-bottom: 300px;
+        }
+        ._ibg img{
+            // margin-bottom: 150px;
         }
     }
 

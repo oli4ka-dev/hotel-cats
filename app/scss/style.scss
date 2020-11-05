@@ -53,10 +53,11 @@
 //start section reserve
 .reserve {
     // margin-bottom: 105px;
-    padding-bottom: 115px;
+    // padding-bottom: 115px;
 
     &__wrapper {
         position: relative;
+        padding-bottom: 115px;
     }
 
     &__img {
