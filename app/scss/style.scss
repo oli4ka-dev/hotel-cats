@@ -578,7 +578,7 @@
 ///////////////start page catalog
 // start section banner
 .banner {
-   margin: 140px 0;
+   margin: 120px 0;
     &__wrapper {
         position: relative;
     }
@@ -625,8 +625,141 @@ margin-left: 270px;
         }
     }
 
-  
 // end section banner
+// start section cards
+.cards{
+&__box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+&__title{
+    margin: 0;
+}
+&__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+&__inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 870px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.aside{
+    max-width: 300px;
+    width: 100%;
+}
+}
+.cards__item{
+    max-width: 270px;
+    width: 100%;
+    min-height: 428px;
+    background-color: #fff;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+border-radius: 6px;
+margin-bottom: 30px;
+    &-img{
+        height: 185px;
+        img{
+            border-radius: 6px 6px 0px 0px;
+            overflow: hidden;
+        }
+    }
+    &-content{
+        padding: 22px 17px;
+    }
+    &-title{
+        font-family: "Rubik-Medium";
+        font-size: 20px;
+line-height: 24px;
+color: $text;
+margin-bottom: 10px;
+    }
+    &-list{
+        list-style: none;
+        margin-bottom: 20px;
+        li{
+            font-size: 14px;
+line-height: 17px;
+margin-bottom: 8px;
+.list-icon{
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+
+    &::after { 
+        content: attr(data-title); 
+        font-family: "OpenSans-SemiBold"; 
+        padding: 0;
+        font-size: 1px;
+        line-height: 1px;
+        position: absolute; 
+        z-index: 0;
+        opacity: 0; 
+        overflow: hidden;
+       left: auto;
+       right: 0px;
+        bottom: 19px;
+        transition: all .15s;
+       }
+}
+.list-icon:hover::after { 
+    content: attr(data-title); 
+    position: absolute; 
+    z-index: 1; 
+    opacity: 1;
+    overflow: visible;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 7px 10px; 
+    background-color: #fcfaf7;
+box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+border: 1px solid #FAC663;
+border-radius: 4px;
+
+   }
+  
+.list-bold{
+    font-family: "OpenSans-SemiBold";
+    font-size: 18px;
+line-height: 22px;
+    margin-left: 7px;
+}
+        }
+    }
+    .cards__btn{
+        font-family: "OpenSans-SemiBold";
+        text-align: center;
+        padding: 14px 20px 14px 0px;
+        width: 100%;
+        background-color: #FF7236;
+        color:#FFFEFD;
+        border-radius: 25px;
+        font-size: 14px;
+line-height: 17px;
+position: relative;
+
+&::after {
+    content: url(../images/catalog-icon/paw-btn.svg);
+    position: absolute;
+    top: 6px;
+   right: 6px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #FFFEFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    }
+}
+// end section cards
 ///////////////end page catalog
 
 @import '_media';
