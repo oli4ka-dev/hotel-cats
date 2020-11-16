@@ -15,7 +15,7 @@
             <header class="header">
                 <div class="container">
                     <div class="inner">
-                        <a class="logo" href="#">
+                        <a class="logo" href="index.html">
                             <picture class="logo__img">
                                 <source srcset="images/logo-mobile.svg" media="(max-width: 600px)">
                                 <img src="images/logo.svg" alt="logo">
@@ -29,7 +29,7 @@
                             </div>
                             <ul class="menu__list">
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
+                                    <a class="menu__list-link" href="index.html#advantage">
                                         Почему мы?
                                     </a>
                                 </li>
@@ -39,17 +39,17 @@
                                     </a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
+                                    <a class="menu__list-link" href="index.html#review">
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="menu__list-item">
-                                    <a class="menu__list-link" href="#">
+                                    <a class="menu__list-link" href="#contacts">
                                         Как нас найти
                                     </a>
                                 </li>
 
-                                <div class="content-info-text content-info-social-link header__btn-social">
+                                <li class="content-info-text content-info-social-link header__btn-social">
                                     <a class="content-info-text content-info-phone" href="tel:88003335599">
                                         8 (800) 333-55-99
                                     </a>
@@ -70,256 +70,373 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </header>
             <main>
-                <section class="cards">
+                <section class="cards" id="cards">
                     <div class="container">
                         <div class="cards__box">
                             <h1 class="cards__title title">
                                 Наши номера
-                            </h1>
-                            <select name="" id="">
-                                <option value="">По площади</option>
-                                <option value="">По площади</option>
-                                <option value="">По цене</option>
-                                <option value="">По цене</option>
-                            </select>
+                            </h1>   
+                            <div class="cards__box-buttons">
+                                <button class="block-filter">Фильтры</button>
+
+                                <button class="block-down sort"  type="button" data-sort="order:asc">По площади</button>
+                                <button class="block-up sort" type="button" data-sort="order:descending">По площади</button>
+                            </div>                     
                         </div>
                         <div class="cards__wrapper">
 
-                            <aside class="aside">
+                            <div class="overlay__aside">
+                                <aside class="aside aside-js">
+                                    <div class="aside__close aside__close-js"></div>
+                                    <div class="aside__title">
+                                        Цена за сутки,₽
+                                    </div>
+                                    <div class="aside__price">
+                                        <div class="aside__price-box">от 100</div>
+                                        <div class="aside__price-box">от 600</div>
+                                    </div>
+                                    <form class="aside__form" action="#">
+                                        <div class="aside__title">
+                                            Площадь
+                                        </div>
+                                        <div class="aside__form-content">
+                                            <label for="checkbox-01">
+                                                <input class="check-box" id="checkbox-01" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span>  0,63 м2</span>
+                                              
+                                            </label>
+                                            <label for="checkbox-02">
+                                                <input class="check-box" id="checkbox-02" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span> 0,90 м2</span>
+                                            </label>
+                                            <label for="checkbox-03">
+                                                <input class="check-box" id="checkbox-03" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                1,13 м2
+                                            </label>
+                                            <label for="checkbox-04">
+                                                <input class="check-box" id="checkbox-04" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                1,56 м2
+                                            </label>
+                                            <label for="checkbox-05">
+                                                <input class="check-box" id="checkbox-05" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                2,56 м2
+                                            </label>
+                                            <label for="checkbox-06">
+                                                <input class="check-box" id="checkbox-06" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                2,88 м2
+                                            </label>
+                                        </div>
+    
+                                        <div class="aside__title">
+                                            Оснащение номера
+                                        </div>
+                                        <div class="aside__form-content">
+                                            <label for="check-box-01">
+                                                <input class="check-box" id="check-box-01" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span>Пустой номер</span>                                       
+                                            </label>
+                                            <label for="check-box-02">
+                                                <input class="check-box" id="check-box-02" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span>Лежак</span>
+                                            </label>
+                                            <label for="check-box-03">
+                                                <input class="check-box" id="check-box-03" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span>Когтеточка</span>
+                                            </label>
+                                            <label for="check-box-04">
+                                                <input class="check-box" id="check-box-04" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span>Игровой-комплекс</span>
+                                            </label>
+                                            <label for="check-box-05">
+                                                <input class="check-box" id="check-box-05" type="checkbox" checked>
+                                                <span class="check-box-style"></span>
+                                                <span>Домик</span>
+                                            </label>
+                                        </div>
+                                 
+                                        <button class="aside__submit-btn" type="submit">Применить</button>
+                                        <button class="aside__reset-btn" type="reset">Сбросить фильтр</button>
+                                    </form>
+                                </aside>
+                            </div>
+                           
 
-                            </aside>
-                            <div class="cards__inner">
-                                <div class="cards__item">
+                            <div class="cards__inner" id="cards__inner">
+
+                                <div class="cards__item mix" data-order="1">
                                     <div class="cards__item-img _ibg">
-                                        <picture>
-                                            <source srcset="images/catalog-bg/economy.jpg" media="(min-width: 992px)">
-                                            <source srcset="images/catalog-bg/economy-tablet.jpg"
-                                                media="(max-width: 768px)">
-                                            <source srcset="images/catalog-bg/economy-mobile.jpg"
-                                                media="(max-width: 767px)">
-                                            <img src="images/catalog-bg/economy.jpg" alt="economy-bg">
-                                        </picture>
+                                        <a class="cards__item-link" href="#">
+                                            <picture>
+                                                <!-- <source srcset="images/catalog-bg/economy.jpg"
+                                                    media="(min-width: 992px)">
+                                                <source srcset="images/catalog-bg/economy-tablet.jpg"
+                                                    media="(max-width: 768px)">
+                                                <source srcset="images/catalog-bg/economy-mobile.jpg"
+                                                    media="(max-width: 767px)"> -->
+                                                <img src="images/catalog-bg/economy.jpg" alt="economy-bg">
+                                            </picture>
+                                        </a>
+
                                     </div>
                                     <div class="cards__item-content">
-                                        <div class="cards__item-title">
-                                            Эконом
-                                        </div>
-                                        <ul class="cards__item-list">
-                                            <li>Размеры (ШхГхВ) - 90х70х180 см</li>
-                                            <li>Площадь - 0,63 м2</li>
-                                            <li>
-                                                Оснащение номера
-                                                <div class="list-icon" data-title="Пустой номер">
-                                                    <img src="images/catalog-icon/empty.svg" alt="empty-icon">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                Цена за сутки:
-                                                <span class="list-bold">100₽</span>
-                                            </li>
-                                        </ul>
-                                        <a class="cards__btn" href="#">Забронировать</a>
+                                        <div class="cards__item-content-wrap">
+                                            <div class="cards__item-title">
+                                                Эконом   
+                                            </div>
+                                            <ul class="cards__item-list">
+                                                <li>Размеры (ШхГхВ) - 90х70х180 см</li>
+                                                <li>Площадь - 0,63 м2</li>
+                                                <li>
+                                                    Оснащение номера
+                                                    <div class="list-icon" data-title="Пустой номер">
+                                                        <img src="images/catalog-icon/empty.svg" alt="empty-icon">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Цена за сутки:
+                                                    <span class="list-bold">100₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>  
+                                            <a class="cards__btn btn-hover" href="#">Забронировать</a>
                                     </div>
                                 </div>
-                                <div class="cards__item">
+
+                                <div class="cards__item mix" data-order="2">
                                     <div class="cards__item-img _ibg">
-                                        <picture>
-                                            <source srcset="images/catalog-bg/economy-plus.jpg"
-                                                media="(min-width: 992px)">
-                                            <source srcset="images/catalog-bg/economy-plus-tablet.jpg"
-                                                media="(max-width: 768px)">
-                                            <source srcset="images/catalog-bg/economy-plus-mobile.jpg"
-                                                media="(max-width: 767px)">
-                                            <img src="images/catalog-bg/economy-plus.jpg" alt="economy-plus-bg">
-                                        </picture>
+                                        <a class="cards__item-link" href="#">
+                                            <picture>
+                                                <!-- <source srcset="images/catalog-bg/economy-plus.jpg"
+                                                    media="(min-width: 992px)">
+                                                <source srcset="images/catalog-bg/economy-plus-tablet.jpg"
+                                                    media="(max-width: 768px)">
+                                                <source srcset="images/catalog-bg/economy-plus-mobile.jpg"
+                                                    media="(max-width: 767px)"> -->
+                                                <img src="images/catalog-bg/economy-plus.jpg" alt="economy-plus-bg">
+                                            </picture>
+                                        </a>
                                     </div>
                                     <div class="cards__item-content">
-                                        <div class="cards__item-title">
-                                            Эконом плюс
-                                        </div>
-                                        <ul class="cards__item-list">
-                                            <li>Размеры (ШхГхВ) - 90х100х180 см</li>
-                                            <li>Площадь - 0,90 м2</li>
-                                            <li>
-                                                Оснащение номера
-                                                <div class="list-icon" data-title="Лежак">
-                                                    <img src="images/catalog-icon/bed.svg" alt="bed-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Когтеточка">
-                                                    <img src="images/catalog-icon/claw.svg" alt="claw-icon">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                Цена за сутки:
-                                                <span class="list-bold">200₽</span>
-                                            </li>
-                                        </ul>
-                                        <a class="cards__btn" href="#">Забронировать</a>
+                                        <div class="cards__item-content-wrap">
+                                            <div class="cards__item-title">
+                                                Эконом плюс
+                                            </div>
+                                            <ul class="cards__item-list">
+                                                <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+                                                <li>Площадь - 0,90 м2</li>
+                                                <li>
+                                                    Оснащение номера
+                                                    <div class="list-icon" data-title="Лежак">
+                                                        <img src="images/catalog-icon/bed.svg" alt="bed-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Когтеточка">
+                                                        <img src="images/catalog-icon/claw.svg" alt="claw-icon">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Цена за сутки:
+                                                    <span class="list-bold">200₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>                                     
+                                        <a class="cards__btn btn-hover" href="#">Забронировать</a>
                                     </div>
                                 </div>
-                                <div class="cards__item">
+
+                                <div class="cards__item mix" data-order="3">
                                     <div class="cards__item-img _ibg">
-                                        <picture>
-                                            <source srcset="images/catalog-bg/comfort.jpg" media="(min-width: 992px)">
-                                            <source srcset="images/catalog-bg/comfort-tablet.jpg"
-                                                media="(max-width: 768px)">
-                                            <source srcset="images/catalog-bg/comfort-mobile.jpg"
-                                                media="(max-width: 767px)">
-                                            <img src="images/catalog-bg/comfort.jpg" alt="comfort.-bg">
-                                        </picture>
+                                        <a class="cards__item-link" href="#">
+                                            <picture>
+                                                <source srcset="images/catalog-bg/comfort.jpg"
+                                                    media="(min-width: 992px)">
+                                                <source srcset="images/catalog-bg/comfort-tablet.jpg"
+                                                    media="(max-width: 768px)">
+                                                <source srcset="images/catalog-bg/comfort-mobile.jpg"
+                                                    media="(max-width: 767px)">
+                                                <img src="images/catalog-bg/comfort.jpg" alt="comfort.-bg">
+                                            </picture>
+                                        </a>
                                     </div>
                                     <div class="cards__item-content">
-                                        <div class="cards__item-title">
-                                            Комфорт
-                                        </div>
-                                        <ul class="cards__item-list">
-                                            <li>Размеры (ШхГхВ) - 100х125х180 см</li>
-                                            <li>Площадь - 1,13 м2</li>
-                                            <li>
-                                                Оснащение номера
-                                                <div class="list-icon" data-title="Лежак">
-                                                    <img src="images/catalog-icon/bed.svg" alt="bed-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Когтеточка">
-                                                    <img src="images/catalog-icon/claw.svg" alt="claw-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Игровой-комплекс">
-                                                    <img src="images/catalog-icon/game.svg" alt="game-icon">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                Цена за сутки:
-                                                <span class="list-bold">250₽</span>
-                                            </li>
-                                        </ul>
-                                        <a class="cards__btn" href="#">Забронировать</a>
+                                        <div class="cards__item-content-wrap">
+                                            <div class="cards__item-title">
+                                                Комфорт
+                                            </div>
+                                            <ul class="cards__item-list">
+                                                <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                                                <li>Площадь - 1,13 м2</li>
+                                                <li>
+                                                    Оснащение номера
+                                                    <div class="list-icon" data-title="Лежак">
+                                                        <img src="images/catalog-icon/bed.svg" alt="bed-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Когтеточка">
+                                                        <img src="images/catalog-icon/claw.svg" alt="claw-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Игровой-комплекс">
+                                                        <img src="images/catalog-icon/game.svg" alt="game-icon">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Цена за сутки:
+                                                    <span class="list-bold">250₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>                                                                             
+                                        <a class="cards__btn btn-hover" href="#">Забронировать</a>
                                     </div>
                                 </div>
-                                <div class="cards__item">
+
+                                <div class="cards__item mix" data-order="4">
                                     <div class="cards__item-img _ibg">
-                                        <picture>
-                                            <source srcset="images/catalog-bg/sut.jpg" media="(min-width: 992px)">
-                                            <source srcset="images/catalog-bg/sut-tablet.jpg"
-                                                media="(max-width: 768px)">
-                                            <source srcset="images/catalog-bg/sut-mobile.jpg"
-                                                media="(max-width: 767px)">
-                                            <img src="images/catalog-bg/sut.jpg" alt="sut-bg">
-                                        </picture>
+                                        <a class="cards__item-link" href="#">
+                                            <picture>
+                                                <source srcset="images/catalog-bg/sut.jpg" media="(min-width: 992px)">
+                                                <source srcset="images/catalog-bg/sut-tablet.jpg"
+                                                    media="(max-width: 768px)">
+                                                <source srcset="images/catalog-bg/sut-mobile.jpg"
+                                                    media="(max-width: 767px)">
+                                                <img src="images/catalog-bg/sut.jpg" alt="sut-bg">
+                                            </picture>
+                                        </a>
                                     </div>
                                     <div class="cards__item-content">
-                                        <div class="cards__item-title">
-                                            Сьют
-                                        </div>
-                                        <ul class="cards__item-list">
-                                            <li>Размеры (ШхГхВ) - 125х125х180 см</li>
-                                            <li>Площадь - 1,56 м2</li>
-                                            <li>
-                                                Оснащение номера
-                                                <div class="list-icon" data-title="Лежак">
-                                                    <img src="images/catalog-icon/bed.svg" alt="bed-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Когтеточка">
-                                                    <img src="images/catalog-icon/claw.svg" alt="claw-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Игровой комплекс">
-                                                    <img src="images/catalog-icon/game.svg" alt="game-icon">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                Цена за сутки:
-                                                <span class="list-bold">350₽</span>
-                                            </li>
-                                        </ul>
-                                        <a class="cards__btn" href="#">Забронировать</a>
+                                        <div class="cards__item-content-wrap">
+                                            <div class="cards__item-title">
+                                                Сьют
+                                            </div>
+                                            <ul class="cards__item-list">
+                                                <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                                                <li>Площадь - 1,56 м2</li>
+                                                <li>
+                                                    Оснащение номера
+                                                    <div class="list-icon" data-title="Лежак">
+                                                        <img src="images/catalog-icon/bed.svg" alt="bed-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Когтеточка">
+                                                        <img src="images/catalog-icon/claw.svg" alt="claw-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Игровой комплекс">
+                                                        <img src="images/catalog-icon/game.svg" alt="game-icon">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Цена за сутки:
+                                                    <span class="list-bold">350₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>                                                                             
+                                        <a class="cards__btn btn-hover" href="#">Забронировать</a>
                                     </div>
                                 </div>
-                                <div class="cards__item">
+
+                                <div class="cards__item mix" data-order="5">
                                     <div class="cards__item-img _ibg">
-                                        <picture>
-                                            <source srcset="images/catalog-bg/luxe.jpg" media="(min-width: 992px)">
-                                            <source srcset="images/catalog-bg/luxe-tablet.jpg"
-                                                media="(max-width: 768px)">
-                                            <source srcset="images/catalog-bg/luxe-mobile.jpg"
-                                                media="(max-width: 767px)">
-                                            <img src="images/catalog-bg/luxe.jpg" alt="luxe-bg">
-                                        </picture>
+                                        <a class="cards__item-link" href="#">
+                                            <picture>
+                                                <source srcset="images/catalog-bg/luxe.jpg" media="(min-width: 992px)">
+                                                <source srcset="images/catalog-bg/luxe-tablet.jpg"
+                                                    media="(max-width: 768px)">
+                                                <source srcset="images/catalog-bg/luxe-mobile.jpg"
+                                                    media="(max-width: 767px)">
+                                                <img src="images/catalog-bg/luxe.jpg" alt="luxe-bg">
+                                            </picture>
+                                        </a>
                                     </div>
                                     <div class="cards__item-content">
-                                        <div class="cards__item-title">
-                                            Люкс
-                                        </div>
-                                        <ul class="cards__item-list">
-                                            <li>Размеры (ШхГхВ) - 160х160х180 см</li>
-                                            <li>Площадь - 2,56 м2</li>
-                                            <li>
-                                                Оснащение номера
-                                                <div class="list-icon" data-title="Лежак">
-                                                    <img src="images/catalog-icon/bed.svg" alt="bed-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Когтеточка">
-                                                    <img src="images/catalog-icon/claw.svg" alt="claw-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Игровой комплекс">
-                                                    <img src="images/catalog-icon/game.svg" alt="game-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Домик">
-                                                    <img src="images/catalog-icon/house.svg" alt="house-icon">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                Цена за сутки:
-                                                <span class="list-bold">500₽</span>
-                                            </li>
-                                        </ul>
-                                        <a class="cards__btn" href="#">Забронировать</a>
+                                        <div class="cards__item-content-wrap">
+                                            <div class="cards__item-title">
+                                                Люкс
+                                            </div>
+                                            <ul class="cards__item-list">
+                                                <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+                                                <li>Площадь - 2,56 м2</li>
+                                                <li>
+                                                    Оснащение номера
+                                                    <div class="list-icon" data-title="Лежак">
+                                                        <img src="images/catalog-icon/bed.svg" alt="bed-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Когтеточка">
+                                                        <img src="images/catalog-icon/claw.svg" alt="claw-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Игровой комплекс">
+                                                        <img src="images/catalog-icon/game.svg" alt="game-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Домик">
+                                                        <img src="images/catalog-icon/house.svg" alt="house-icon">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Цена за сутки:
+                                                    <span class="list-bold">500₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>                                                                           
+                                        <a class="cards__btn btn-hover" href="#">Забронировать</a>
                                     </div>
                                 </div>
-                                <div class="cards__item">
+
+                                <div class="cards__item mix" data-order="6">
                                     <div class="cards__item-img _ibg">
-                                        <picture>
-                                            <source srcset="images/catalog-bg/super-luxe.jpg" media="(min-width: 992px)">
-                                            <source srcset="images/catalog-bg/super-luxe-tablet.jpg"
-                                                media="(max-width: 768px)">
-                                            <source srcset="images/catalog-bg/super-luxe-mobile.jpg"
-                                                media="(max-width: 767px)">
-                                            <img src="images/catalog-bg/super-luxe.jpg" alt="super-luxe-bg">
-                                        </picture>
+                                        <a class="cards__item-link" href="#">
+                                            <picture>
+                                                <source srcset="images/catalog-bg/super-luxe.jpg"
+                                                    media="(min-width: 992px)">
+                                                <source srcset="images/catalog-bg/super-luxe-tablet.jpg"
+                                                    media="(max-width: 768px)">
+                                                <source srcset="images/catalog-bg/super-luxe-mobile.jpg"
+                                                    media="(max-width: 767px)">
+                                                <img src="images/catalog-bg/super-luxe.jpg" alt="super-luxe-bg">
+                                            </picture>
+                                        </a>
                                     </div>
                                     <div class="cards__item-content">
-                                        <div class="cards__item-title">
-                                            Супер-Люкс
-                                        </div>
-                                        <ul class="cards__item-list">
-                                            <li>Размеры (ШхГхВ) - 180х160х180 см</li>
-                                            <li>Площадь - 2,88 м2</li>
-                                            <li>
-                                                Оснащение номера
-                                                <div class="list-icon" data-title="Лежак">
-                                                    <img src="images/catalog-icon/bed.svg" alt="bed-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Когтеточка">
-                                                    <img src="images/catalog-icon/claw.svg" alt="claw-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Игровой комплекс">
-                                                    <img src="images/catalog-icon/game.svg" alt="game-icon">
-                                                </div>
-                                                <div class="list-icon" data-title="Домик">
-                                                    <img src="images/catalog-icon/house.svg" alt="house-icon">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                Цена за сутки:
-                                                <span class="list-bold">600₽</span>
-                                            </li>
-                                        </ul>
-                                        <a class="cards__btn" href="#">Забронировать</a>
+                                        <div class="cards__item-content-wrap">
+                                            <div class="cards__item-title">
+                                                Супер-Люкс
+                                            </div>
+                                            <ul class="cards__item-list">
+                                                <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                                                <li>Площадь - 2,88 м2</li>
+                                                <li>
+                                                    Оснащение номера
+                                                    <div class="list-icon" data-title="Лежак">
+                                                        <img src="images/catalog-icon/bed.svg" alt="bed-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Когтеточка">
+                                                        <img src="images/catalog-icon/claw.svg" alt="claw-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Игровой комплекс">
+                                                        <img src="images/catalog-icon/game.svg" alt="game-icon">
+                                                    </div>
+                                                    <div class="list-icon" data-title="Домик">
+                                                        <img src="images/catalog-icon/house.svg" alt="house-icon">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Цена за сутки:
+                                                    <span class="list-bold">600₽</span>
+                                                </li>
+                                            </ul>
+                                        </div>                                                                           
+                                        <a class="cards__btn btn-hover" href="#">Забронировать</a>
                                     </div>
                                 </div>
 
@@ -359,7 +476,7 @@
                     </div>
                 </section>
 
-                <section class="contacts">
+                <section class="contacts" id="contacts">
                     <div class="contacts__wrap">
                         <address class="contacts__content">
                             <div class="contacts__content-inner">
@@ -450,17 +567,17 @@
                             <nav class="menu">
                                 <ul class="menu__list">
                                     <li class="menu__list-item">
-                                        <a class="menu__list-link" href="#">
+                                        <a class="menu__list-link" href="index.html#advantage">
                                             Почему мы?
                                         </a>
                                     </li>
                                     <li class="menu__list-item">
-                                        <a class="menu__list-link" href="#">
+                                        <a class="menu__list-link" href="#cards">
                                             Номера
                                         </a>
                                     </li>
                                     <li class="menu__list-item">
-                                        <a class="menu__list-link" href="#">
+                                        <a class="menu__list-link" href="index.html#review">
                                             Отзывы
                                         </a>
                                     </li>
@@ -490,6 +607,24 @@
 
     </div>
 
+
+    <!-- popup -->
+    <div class="overlay overlay-js">
+        <div class="popup popup-js">
+            <div class="popup__inner">
+                <div class="popup__close popup__close-js"></div>
+                <div class="popup__title">Забронировать номер</div>
+                <form class="popup__form" action="#">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Имя Питомца">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="E-mail">
+
+                    <button class="cards__btn btn-hover" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

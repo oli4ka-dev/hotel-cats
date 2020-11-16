@@ -63,14 +63,58 @@ $(function () {
         ]
     });
 
+    //burger-menu
     $('.header__btn').on('click', function () {
         $('.menu__list, .header__btn-social>ul').slideToggle();
         $('.header__btn').toggleClass('active');
     });
 
+    //start popup
+    //popup открыть  по кнопке
+    $('.reserve__btn,.rooms__btn.btn-hover,.cards__btn.btn-hover').on('click', function () {
+        $('.overlay-js').fadeIn();
+        $('.overlay-js').addClass('disabled');
+    });
+    //popup закрыть на крестик
+    $('.popup__close-js').on('click', function () {
+        $('.overlay-js').fadeOut();
+        $('body').css('filter', 'none');
+    });
+    //popup закрыть вне окна
+    $(document).mouseup(function (e) {
+        let popup = $('.popup-js');
+        if (e.target != popup[0] && popup.has(e.target).length === 0) {
+            $('.overlay-js').fadeOut();
+            $('body').css('filter', 'none');
+        }
+    });
+    //start filter
+    //filter открыть  по кнопке
+    $('.block-filter').on('click', function () {
+        $('.overlay__aside').fadeIn();
+        $('.overlay__aside').addClass('disabled');
+    });
+    //filter закрыть на крестик
+    $('.aside__close-js').on('click', function () {
+        $('.overlay__aside').fadeOut();
+        $('body').css('filter', 'none');
+    });
+    //filter закрыть вне окна
+    // $(document).mouseup(function (e) {
+    //     let aside = $('.aside-js');
+    //     if (e.target != aside[0] && aside.has(e.target).length === 0) {
+    //         $('.overlay__aside').fadeOut();
+    //         $('body').css('filter', 'none');
+    //     }
+    // });
 
+
+    //   $('#cards__inner').mixItUp({});
+
+   
 });
 
+var mixer = mixitup('#cards__inner');
 
 // // Initialize and add the map
 // var map, popup, Popup;

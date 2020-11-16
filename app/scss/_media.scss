@@ -39,6 +39,10 @@
 }
 
 @media(max-width: 1210px) {
+    .cards .aside {
+        max-width: 200px;
+        width: 100%;
+    }
     .advantage {
         &__item {
             max-width: 340px;
@@ -68,6 +72,30 @@
 }
 
 @media(max-width: 1070px) {
+    .cards{
+        .aside {
+            max-width: 300px;
+            min-width: 200px;
+            width: 100%;
+        }
+        .cards__item{
+            max-width: 325px;
+            width: 100%;
+          margin: 0 5px 30px 5px;
+            &-img{
+                height: 185px;
+                max-width: 324px;
+                width: 100%;
+              
+                img{
+                    min-width: 324px;
+                  width: 100%;
+                    height: 185px;       
+                }
+            }
+        }
+    } 
+
     .banner__content {
         margin-left: 120px;
     }
@@ -79,6 +107,11 @@
 }
 
 @media(max-width: 1024px) {
+    .cards .aside {
+        max-width: 250px;
+        width: 100%;
+        margin-right: 20px;
+    }
     .banner__content {
         margin-left: 90px;
     }
@@ -123,6 +156,30 @@
 }
 
 @media(max-width: 993px) {
+    .cards .aside {
+        max-width: 200px;
+        width: 100%;
+    }
+    .popup{
+        max-width: 500px;
+        min-height: auto;
+        &__close{
+            top: 25px;
+           right: 25px;
+           width: 18px;
+        height: 18px;
+        }
+        &__inner{
+            position: relative;
+            padding: 50px 30px;
+            background-image: url(../images/popup-bg-tablet.svg);
+            background-position: 0px 0px;
+        }
+  
+    }
+    .banner{
+        margin: 90px 0;
+    }
     .banner__content {
         margin-left: 60px;
     }
@@ -191,7 +248,66 @@
         }
     }
 }
-
+@media(max-width: 940px){
+    .cards__box {
+        margin: 40px 0;
+    }
+    .cards__box-buttons{
+        display: flex;
+        .block-filter{
+            display: block;
+            &::before{
+                display: block;
+            }
+        }
+    } 
+    .overlay__aside{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(255, 254, 253, 0.8);
+        display: none;
+        overflow-y: scroll;
+    }
+    .cards{
+ 
+        .aside {
+        position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+        max-width: 332px;
+        width: 100%;
+       min-height: 825px;
+        background-color: #FFFEFD;
+box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+border-radius: 6px;
+padding: 50px 60px;
+        }
+        .aside__close{
+            position: absolute;
+            top: 25px;
+           right: 25px;
+           width: 16px;
+        height:16px;
+            background-image: url(../images/close-filtre.svg);
+            background-repeat: no-repeat;
+            z-index: 3;
+            overflow: hidden;
+          cursor: pointer;
+        }
+        &__inner{
+            justify-content: center;
+            max-width: 100%;
+        }
+        .cards__item{
+          margin: 0 15px 30px 15px;
+        }
+    } 
+}
 @media(max-width: 870px) {
     .review {
         .review__item {
@@ -212,8 +328,19 @@
 }
 
 @media(max-width: 769px) {
+    .cards{
+        .aside {
+     
+        }
+        &__inner{
+            justify-content: space-between;
+        }
+        .cards__item{
+          margin: 0 0 30px 0;
+        }
+    } 
     .banner {
-        margin: 100px 0;
+        margin: 40px 0;
          &__img {
              min-height: 359px;
          }
@@ -305,7 +432,39 @@
 }
 
 @media(max-width: 760px) {
-   
+    .cards__box {
+flex-direction: column;
+        align-items: flex-start;
+        min-height: 35px;
+        height: 100%;
+        &-buttons{
+display: flex;
+justify-content: space-between;
+button{
+    margin: 0 15px 0 0;
+}
+        }
+    }
+    .cards{
+        &__title{
+            font-size: 28px;
+line-height: 33px;
+margin-bottom: 30px;
+        }
+        .cards__item{
+            max-width: 290px;
+            width: 100%;
+            &-img{
+                max-width: 290px;
+                width: 100%;
+              
+                img{
+                    min-width: 288px;
+                    width: 100%;
+                }
+            }
+        }
+    }
     .rooms {
         &__wrap-bg {
             background-image: url(../images/fish-mobile.svg);
@@ -462,9 +621,18 @@
     }
 }
 
+@media(max-width:638px){
+    .cards{
+        &__inner{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
 @media(max-width: 600px) {
      .banner {
-        margin: 60px 0;
+margin: 30px 0;
          &__img {
             min-height: 496px;
          }
@@ -611,8 +779,33 @@
 }
 
 @media(max-width: 480px) {
+    .cards__box-buttons{
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        button{
+            margin-right: 0;
+        }
+        .block-filter {
+            width: 100%;
+            margin-bottom: 30px;
+       &::before{
+           left: 37%;
+       }
+         }
+    } 
+    .cards .aside {
+    top: 80px;
+    transform: translate(-50%, 0);
+        max-width: 290px;
+        width: 100%;
+       min-height: 825px;
+padding: 50px 25px;
+.aside__form button{
+    width: 100%;
+}
+        }
     .banner {
-        margin: 40px 0;
+        margin: 25px 0;
     }
     .review {
         .review__item {
@@ -666,8 +859,24 @@
         }
     }
 }
+@media(max-width: 350px){
+    .cards__box-buttons button {
+       width: 138px;
+    }
+    .cards .block-up::before,
+    .cards .block-down::before {
+        left: 15px; 
+    }
+}
 
 ///////////////////////////////////////////////////////////
+
+
+@media(min-width: 941px){
+    .overlay__aside.aside{
+        display: block;   
+    }
+}
 @media(min-width: 601px) {
     .header {
 
