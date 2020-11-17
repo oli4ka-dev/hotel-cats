@@ -286,13 +286,15 @@
 box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
 border-radius: 6px;
 padding: 50px 60px;
+margin-right: 0px;
         }
         .aside__close{
             position: absolute;
             top: 25px;
-           right: 25px;
-           width: 16px;
-        height:16px;
+           right: 5px;
+           max-width: 36px;
+           width: 100%;
+        height:36px;
             background-image: url(../images/close-filtre.svg);
             background-repeat: no-repeat;
             z-index: 3;
@@ -750,12 +752,13 @@ margin: 30px 0;
 
         .menu__list {
             display: none;
-            width: 100%;
             top: 0px;
             left: 0px;
             position: absolute;
+            // position: fixed;
             width: 100%;
             height: 100vh;
+            overflow-y: scroll;
             background-color: #FAC663;
             padding: 100px 0 0 15px;
             z-index: 3;
@@ -763,10 +766,6 @@ margin: 30px 0;
             li+li {
                 margin-left: 0px;
             }
-
-            // &:last-child {
-            //     margin-bottom: 40px;
-            // }
 
             &-link {
                 font-family: "Rubik-Medium";
@@ -860,8 +859,12 @@ padding: 50px 25px;
     }
 }
 @media(max-width: 350px){
+    .cards__box {
+        margin: 40px 0 10px 0;
+    }
     .cards__box-buttons button {
        width: 138px;
+       margin-bottom: 20px;
     }
     .cards .block-up::before,
     .cards .block-down::before {
@@ -872,10 +875,14 @@ padding: 50px 25px;
 ///////////////////////////////////////////////////////////
 
 
-@media(min-width: 941px){
-    .overlay__aside.aside{
-        display: block;   
+@media(min-width: 318px) {
+    .header {
+        .header__btn-social ul {
+            display: flex !important;
+            opacity: 1;
+        }
     }
+
 }
 @media(min-width: 601px) {
     .header {
@@ -887,12 +894,10 @@ padding: 50px 25px;
     }
 }
 
-@media(min-width: 318px) {
-    .header {
-        .header__btn-social ul {
-            display: flex !important;
-            opacity: 1;
-        }
-    }
 
+@media(min-width: 941px){
+    .overlay__aside,
+    .overlay__aside.aside{
+        display: block;   
+    }
 }

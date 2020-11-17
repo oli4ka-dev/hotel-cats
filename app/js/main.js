@@ -69,6 +69,10 @@ $(function () {
         $('.header__btn').toggleClass('active');
     });
 
+    $('.menu__list-link').on('click', function () {
+        $('.menu__list').slideToggle();
+    });
+
     //start popup
     //popup открыть  по кнопке
     $('.reserve__btn,.rooms__btn.btn-hover,.cards__btn.btn-hover').on('click', function () {
@@ -99,22 +103,13 @@ $(function () {
         $('.overlay__aside').fadeOut();
         $('body').css('filter', 'none');
     });
-    //filter закрыть вне окна
-    // $(document).mouseup(function (e) {
-    //     let aside = $('.aside-js');
-    //     if (e.target != aside[0] && aside.has(e.target).length === 0) {
-    //         $('.overlay__aside').fadeOut();
-    //         $('body').css('filter', 'none');
-    //     }
-    // });
 
 
-    //   $('#cards__inner').mixItUp({});
-
+    var mixer = mixitup('#cards__inner');
    
 });
 
-var mixer = mixitup('#cards__inner');
+
 
 // // Initialize and add the map
 // var map, popup, Popup;
